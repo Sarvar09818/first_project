@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индикатор выполнения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .progress-container {
+            text-align: center;
+        }
+
+        .progress-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        progress {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-container">
+        <!-- Метка над индикатором выполнения -->
+        <h1><p class="progress-label">Выполнено 50%</p></h1>
+
+        <!-- Индикатор выполнения -->
+        <progress id="file-progress" value="50" max="100"></progress>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+</body>
+<body>
+    <div class="form-container">
+        <h1>Регистрация на мероприятие</h1>
+
+        <form action="#" method="POST">
+
+            <!-- Полное имя -->
+            <div class="form-group">
+                <label for="fullname">Полное имя</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <!-- Электронная почта -->
+            <div class="form-group">
+                <label for="email">Адрес электронной почты</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Пароль -->
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <small>Минимум 8 символов</small>
+            </div>
+
+            <!-- Дата события -->
+            <div class="form-group">
+                <label for="event-date">Дата события</label>
+                <input type="date" id="event-date" name="event-date" required>
+            </div>
+
+            <!-- Тип мероприятия -->
+            <div class="form-group">
+                <label for="event-type">Тип мероприятия</label>
+                <select id="event-type" name="event-type" required>
+                    <option value="">Выберите тип мероприятия</option>
+                    <option value="seminar">Семинар</option>
+                    <option value="conference">Конференция</option>
+                </select>
+            </div>
+
+            <!-- Кнопка отправки -->
+            <div class="form-group">
+                <button type="submit">Отправить</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
+
+    
